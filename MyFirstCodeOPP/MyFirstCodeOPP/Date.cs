@@ -51,5 +51,12 @@ namespace MyFirstCodeOPP
 
             throw new MotnhException("the month is incorrect");
         }
+        private int validateYear(int year)
+        {
+            if (year >= 1900 && year <= 9999) {
+            return year;}
+
+            throw new YearException("the year is invalidar");
+        }
     }
 }
