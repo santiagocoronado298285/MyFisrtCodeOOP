@@ -21,9 +21,17 @@ namespace MyFirstCodeOPP
         public abstract decimal GetValuetTopay();
         public override string ToString()
         {
-            return $"----Employee---- \n\t ID:{Id} \n\t Firsthname : {Firstname}  \n\t LastName : {Lastname}"+
-                $"\n\t HiringDate : {HirigDate}" +
-                $"\n\t isActive : {IsActive}";
+            return String.Format("----Employee---- \n\t ID:{0} \n\t Firsthname : {1} \n\t BirthDay : {4}  \n\t LastName : {2}" + "\n\t HiringDate : {3}" + "\n\t isActive : {5}",
+                Id,
+                Firstname,
+                Lastname,
+                HirigDate,
+                BirthDay,
+                IsActive);
+
+            //return $"----Employee---- \n\t ID:{Id} \n\t Firsthname : {Firstname}  \n\t LastName : {Lastname}"+
+            //    $"\n\t HiringDate : {HirigDate}" +
+            //    $"\n\t isActive : {IsActive}";
         }
         #endregion
 
