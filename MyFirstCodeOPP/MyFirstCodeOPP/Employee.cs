@@ -11,7 +11,7 @@ namespace MyFirstCodeOPP
         public Date BirthDay { get; set; }
         public string Firstname { get; set; }
         public string Lastname { get; set; }
-        public Date HirihgDate { get; set; }
+        public Date HirigDate { get; set; }
         public bool IsActive { get; set; }
         #endregion
 
@@ -22,7 +22,8 @@ namespace MyFirstCodeOPP
         public override string ToString()
         {
             return $"----Employee---- \n\t ID:{Id} \n\t Firsthname : {Firstname}  \n\t LastName : {Lastname}"+
-                $"\n\t HiringDate : {HirihgDate}";
+                $"\n\t HiringDate : {HirigDate}" +
+                $"\n\t isActive : {IsActive}";
         }
         #endregion
 
