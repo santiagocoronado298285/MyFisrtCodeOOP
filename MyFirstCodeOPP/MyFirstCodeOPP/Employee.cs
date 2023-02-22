@@ -27,7 +27,7 @@ namespace MyFirstCodeOPP
                 Lastname,
                 HirigDate,
                 BirthDay,
-                IsActive);
+                IsActive );
 
             //return $"----Employee---- \n\t ID:{Id} \n\t Firsthname : {Firstname}  \n\t LastName : {Lastname}"+
             //    $"\n\t HiringDate : {HirigDate}" +

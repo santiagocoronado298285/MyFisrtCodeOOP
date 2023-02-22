@@ -7,15 +7,19 @@ namespace MyFirstCodeOPP
     public class SalaryEmployeed : Employee
     {
 
-        #region
+        #region properties
         public decimal Salary { get; set; }
+
         #endregion
 
 
-
+        #region metodos
         public override decimal GetValuetTopay()
         {
-            throw new NotImplementedException();
+            return Salary;
         }
+
+        #endregion
+
     }
 }
