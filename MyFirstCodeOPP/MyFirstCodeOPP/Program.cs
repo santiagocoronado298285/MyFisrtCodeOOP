@@ -38,11 +38,11 @@ namespace MyFirstCodeOPP
                 Console.Write("\n Is the employee active?\n\n" + "true or false\n\n");
                 bool isactive = Convert.ToBoolean(Console.ReadLine());
 
-                Console.WriteLine("enter the value of the commission for the employee");
-                double commissionE = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("enter the number of hours worked by the employee");
+                int hours = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine("enter the number of sales ");
-                decimal SalesE = Convert.ToDecimal(Console.ReadLine());
+                Console.WriteLine("enter the value of hours ");
+                decimal valueH = Convert.ToDecimal(Console.ReadLine());
 
                 //Employee salaryemployeed = new SalaryEmployeed()
                 //{
@@ -59,18 +59,32 @@ namespace MyFirstCodeOPP
 
 
 
+                //Console.WriteLine("----------------Commision Employeed-------------------");
+
+                //CommissionEmployeed commissionEmployeed = new CommissionEmployeed();
+
+                //commissionEmployeed.Id= id;
+                //commissionEmployeed.Firstname = name;
+                //commissionEmployeed.Lastname= lastname;
+                //commissionEmployeed.BirthDate= birth;
+                //commissionEmployeed.IsActive= isactive;
+                //commissionEmployeed.CommissionPorcentage = (float)commissionE;
+                //commissionEmployeed.Sales = SalesE;
+                //Console.WriteLine(commissionEmployeed);
+
+
                 Console.WriteLine("----------------Commision Employeed-------------------");
 
-                CommissionEmployeed commissionEmployeed = new CommissionEmployeed();
+                ContratorEmployeed EmployyedContrator = new ContratorEmployeed();
 
-                commissionEmployeed.Id= id;
-                commissionEmployeed.Firstname = name;
-                commissionEmployeed.Lastname= lastname;
-                commissionEmployeed.BirthDate= birth;
-                commissionEmployeed.IsActive= isactive;
-                commissionEmployeed.CommissionPorcentage = (float)commissionE;
-                commissionEmployeed.Sales = SalesE;
-                Console.WriteLine(commissionEmployeed);
+                EmployyedContrator.Id = id;
+                EmployyedContrator.Firstname = name;
+                EmployyedContrator.Lastname = lastname;
+                EmployyedContrator.BirthDate = birth;
+                EmployyedContrator.IsActive = isactive;
+                EmployyedContrator.Hours = hours;
+                EmployyedContrator.ValueHour  = valueH;
+                Console.WriteLine(EmployyedContrator);
             }
             catch (Exception ex)
             {
