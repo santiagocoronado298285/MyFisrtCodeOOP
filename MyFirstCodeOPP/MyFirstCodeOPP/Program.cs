@@ -23,11 +23,14 @@ namespace MyFirstCodeOPP
                 Console.Write("ingresa el nombre\n");
                 string nombre = Console.ReadLine();
 
+                Console.Write("ingresa el nombre\n");
+                string apellido = Console.ReadLine();
+
                 Employee salaryemployeed = new SalaryEmployeed()
                 {
                     Id= id,
                     Firstname= nombre,
-                    Lastname = "Coronado",
+                    Lastname = apellido,
                     BirthDate = new Date(2000, 5, 12),
                     HirigDate = new Date(2019,8,12),
                     IsActive= true,
