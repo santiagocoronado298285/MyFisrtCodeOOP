@@ -38,11 +38,17 @@ namespace MyFirstCodeOPP
                 Console.Write("\n Is the employee active?\n\n" + "true or false\n\n");
                 bool isactive = Convert.ToBoolean(Console.ReadLine());
 
-                Console.WriteLine("enter the number of hours worked by the employee");
-                int hours = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("enter the salary base");
+                decimal salary = Convert.ToDecimal(Console.ReadLine());
 
                 Console.WriteLine("enter the value of hours ");
                 decimal valueH = Convert.ToDecimal(Console.ReadLine());
+
+                Console.WriteLine("enter the number sales of employeed ");
+                decimal  sales = Convert.ToDecimal(Console.ReadLine());
+
+                Console.WriteLine("enter the commission employyed");
+                decimal comission = Convert.ToDecimal(Console.ReadLine());
 
                 //Employee salaryemployeed = new SalaryEmployeed()
                 //{
@@ -73,18 +79,35 @@ namespace MyFirstCodeOPP
                 //Console.WriteLine(commissionEmployeed);
 
 
-                Console.WriteLine("----------------Commision Employeed-------------------");
+                //Console.WriteLine("----------------contrator Employeed-------------------");
 
-                ContratorEmployeed EmployyedContrator = new ContratorEmployeed();
+                //ContratorEmployeed basecommisssionE = new ContratorEmployeed();
 
-                EmployyedContrator.Id = id;
-                EmployyedContrator.Firstname = name;
-                EmployyedContrator.Lastname = lastname;
-                EmployyedContrator.BirthDate = birth;
-                EmployyedContrator.IsActive = isactive;
-                EmployyedContrator.Hours = hours;
-                EmployyedContrator.ValueHour  = valueH;
-                Console.WriteLine(EmployyedContrator);
+                //basecommisssionE.Id = id;
+                //basecommisssionE.Firstname = name;
+                //basecommisssionE.Lastname = lastname;
+                //basecommisssionE.BirthDate = birth;
+                //basecommisssionE.IsActive = isactive;
+                //basecommisssionE.Hours = hours;
+                //basecommisssionE.ValueHour  = valueH;
+                //Console.WriteLine(basecommisssionE);
+
+
+
+                Console.WriteLine("----------------contrator Employeed-------------------");
+
+                BaseCommission basecommisssionE = new BaseCommission();
+
+                basecommisssionE.Id = id;
+                basecommisssionE.Firstname = name;
+                basecommisssionE.Lastname = lastname;
+                basecommisssionE.BirthDate = birth;
+                basecommisssionE.IsActive = isactive;
+                basecommisssionE.Base = salary;
+                basecommisssionE.Sales = sales;
+                basecommisssionE.CommissionPorcentage = (float)comission;
+                Console.WriteLine(basecommisssionE);
+
             }
             catch (Exception ex)
             {

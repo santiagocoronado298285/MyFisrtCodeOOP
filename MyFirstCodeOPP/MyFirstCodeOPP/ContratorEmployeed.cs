@@ -9,13 +9,13 @@ namespace MyFirstCodeOPP
 
         #region properties
 
-        public int Hours { get; set; }
+        public float Hours { get; set; }
         public decimal ValueHour { get; set; }
 
         #endregion
         public override decimal GetValuetTopay()
         {
-            return (Hours* ValueHour);
+            return ((decimal)Hours* ValueHour);
         }
 
         public override string ToString()
