@@ -17,11 +17,16 @@ namespace MyFirstCodeOPP
 
 
                 Console.WriteLine("*----------------------------");
+                Console.Write("ingresa el ID\n\n");
+                int id = Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("ingresa el nombre\n");
+                string nombre = Console.ReadLine();
 
                 Employee salaryemployeed = new SalaryEmployeed()
                 {
-                    Id= 1,
-                    Firstname= "santiago",
+                    Id= id,
+                    Firstname= nombre,
                     Lastname = "Coronado",
                     BirthDate = new Date(2000, 5, 12),
                     HirigDate = new Date(2019,8,12),
