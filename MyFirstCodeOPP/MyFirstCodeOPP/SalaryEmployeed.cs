@@ -19,6 +19,11 @@ namespace MyFirstCodeOPP
             return Salary;
         }
 
+        public override string ToString()
+        {
+            return $"{base.ToString()}\n\t Value to Pay :{GetValuetTopay()} ";
+        }
+
         #endregion
 
     }

@@ -8,7 +8,7 @@ namespace MyFirstCodeOPP
     {
         #region properties
         public int Id { get; set; }
-        public Date BirthDay { get; set; }
+        public Date BirthDate { get; set; }
         public string Firstname { get; set; }
         public string Lastname { get; set; }
         public Date HirigDate { get; set; }
@@ -26,7 +26,7 @@ namespace MyFirstCodeOPP
                 Firstname,
                 Lastname,
                 HirigDate,
-                BirthDay,
+                BirthDate,
                 IsActive );
 
             //return $"----Employee---- \n\t ID:{Id} \n\t Firsthname : {Firstname}  \n\t LastName : {Lastname}"+
