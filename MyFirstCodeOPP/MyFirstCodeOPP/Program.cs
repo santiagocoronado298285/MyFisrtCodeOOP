@@ -17,27 +17,60 @@ namespace MyFirstCodeOPP
 
 
                 Console.WriteLine("*----------------------------");
-                Console.Write("ingresa el ID\n\n");
+                Console.Write("Enter to ID\n\n");
                 int id = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("ingresa el nombre\n");
-                string nombre = Console.ReadLine();
+                Console.Write("\nEnter the Name\n");
+                string name = Console.ReadLine();
 
-                Console.Write("ingresa el nombre\n");
-                string apellido = Console.ReadLine();
+                Console.Write("\nEnter the Lastname\n");
+                string lastname = Console.ReadLine();
 
-                Employee salaryemployeed = new SalaryEmployeed()
-                {
-                    Id= id,
-                    Firstname= nombre,
-                    Lastname = apellido,
-                    BirthDate = new Date(2000, 5, 12),
-                    HirigDate = new Date(2019,8,12),
-                    IsActive= true,
-                    Salary = 2000000.34m
+                Console.WriteLine("\nYou must enter the employee's date of birth, starting with year, month and day ");
 
-                };
-                Console.WriteLine(salaryemployeed.ToString());
+                var year = Convert.ToInt32(Console.ReadLine());
+                var month = Convert.ToInt32(Console.ReadLine());
+                var day = Convert.ToInt32(Console.ReadLine());
+
+                Date birth = new Date(year, month, day);
+
+
+                Console.Write("\n Is the employee active?\n\n" + "true or false\n\n");
+                bool isactive = Convert.ToBoolean(Console.ReadLine());
+
+                Console.WriteLine("enter the value of the commission for the employee");
+                double commissionE = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("enter the number of sales ");
+                decimal SalesE = Convert.ToDecimal(Console.ReadLine());
+
+                //Employee salaryemployeed = new SalaryEmployeed()
+                //{
+                //    Id = id,
+                //    Firstname = nombre,
+                //    Lastname = apellido,
+                //    BirthDate = new Date(2000, 5, 12),
+                //    HirigDate = new Date(2019, 8, 12),
+                //    IsActive = isactive,
+                //    Salary = 2000000.34m
+
+                //};
+                //Console.WriteLine(salaryemployeed.ToString());
+
+
+
+                Console.WriteLine("----------------Commision Employeed-------------------");
+
+                CommissionEmployeed commissionEmployeed = new CommissionEmployeed();
+
+                commissionEmployeed.Id= id;
+                commissionEmployeed.Firstname = name;
+                commissionEmployeed.Lastname= lastname;
+                commissionEmployeed.BirthDate= birth;
+                commissionEmployeed.IsActive= isactive;
+                commissionEmployeed.CommissionPorcentage = (float)commissionE;
+                commissionEmployeed.Sales = SalesE;
+                Console.WriteLine(commissionEmployeed);
             }
             catch (Exception ex)
             {
